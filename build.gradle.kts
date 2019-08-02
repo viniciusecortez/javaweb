@@ -1,5 +1,6 @@
 plugins {
-    id 'war'  
+   war
+   id("org.gretty") version "2.2.0"
 }
 
 repositories {
@@ -7,6 +8,6 @@ repositories {
 }
 
 dependencies {
-    providedCompile 'javax.servlet:javax.servlet-api:3.1.0' 
-    testCompile 'junit:junit:4.12'
+    providedCompile ("javax.servlet:javax.servlet-api:3.1.0" )
+    testCompile ("junit:junit:4.12")
 }
